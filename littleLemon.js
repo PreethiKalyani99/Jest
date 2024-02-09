@@ -1,7 +1,7 @@
 function getPrices(includeTax, dishData){
     const taxRate = 0.2
     let str = ''
-    str += includeTax ? "Prices with 20% tax:" : "Prices without tax:"
+    str += includeTax ? "Prices with 20% tae:" : "Prices without tax:"
     const result = dishData.reduce((acc,cur) => {
         if(includeTax){
             const taxAmount = cur.price * taxRate
